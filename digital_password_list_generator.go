@@ -6,10 +6,7 @@ import (
   "os"
 )
 
-
-
 func main() {
-
 	var min, max, length_max int
 	var result string
 	var err, err_2 error
@@ -48,14 +45,10 @@ func main() {
     	fmt.Printf("The maximum number should not be more than %d", max_default)
     	fmt.Printf("Used by default %d", max_default)
     }
-
-    
-
+	
     if min >= max {
     	min = min_default
     }
-
-
 
     length_max = len(strconv.Itoa(max))
 
@@ -85,9 +78,7 @@ func main() {
 				result += str
 			}
 		}
-		
 	}
-
 	file.WriteString(result)
 }
 
